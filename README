@@ -1,0 +1,16 @@
+##Peer to Peer - PA4
+
+This program implements a P2P client and server, over TCP Sockets.
+The server maintains a list of all available files at each client, 
+and points clients towards the client that has the file requested.
+
+To start the server:
+./server_PFS <Port>
+
+The client connects to the server and sends messages indicating
+what file it wants transfered, or to list all available files. The
+client also handles get requests from other clients, and transfers 
+files via a direct TCP connection.
+
+To start the client:
+./client_PFS <Client Name> <Server IP> <Server Port> 
